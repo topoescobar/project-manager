@@ -50,6 +50,7 @@ a {
   color: var(--gris2);
 }
 
+
 /** BOTONES **/
 .btn {
   margin-top: 2rem;
@@ -64,11 +65,11 @@ a {
 .btn:hover {
   cursor: pointer;
 }
-.btn-primario {
+.btn_primary {
   background-color: var(--gris2);
   color: var(--blanco);
 }
-.btn-primario:hover {
+.btn_primary:hover {
   background: var(--gris3);
 }
 .btn-secundario {
@@ -87,6 +88,11 @@ a {
   display: block;
   background-color: transparent;
 }
+
+.btn-eliminar {
+  background-color: var(--blanco);
+}
+
 
 @media (min-width: 768px) {
   .contenedor-app {
@@ -206,7 +212,7 @@ aside  {
   -moz-box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
   box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
 }
-.sombra-dark {
+.dark_shadow {
   -webkit-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
   -moz-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
   box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
@@ -284,7 +290,7 @@ aside  {
   transition: opacity 200ms;
 }
 
-.form-usuario {
+.user_form {
     background-color: var(--gris2);
     height: 100vh;
     min-height: 800px;
@@ -293,7 +299,7 @@ aside  {
     justify-content: center;
 }
 
-.contenedor-form {
+.containter_form {
     padding: 5rem 3rem;
     max-width: 500px;
     width: 95%;
@@ -301,24 +307,33 @@ aside  {
     border-radius: 1rem;
 }
 
-.campo-form {
+.form_field {
     display: flex;
     margin-bottom: 2rem;
     align-items: center;
 }
-.campo-form:last-of-type {
+.form_field:last-of-type {
   margin: 0;
 }
-.campo-form label {
+.form_field label {
   flex: 0 0 100px;
   font-family: var(--textFont);
 }
-.campo-form input[type="password"],
-.campo-form input[type="email"], 
-.campo-form input[type="text"] {
+.form_field input[type="password"],
+.form_field input[type="email"], 
+.form_field input[type="text"] {
   border: 1px solid #e1e1e1;
   padding: 1rem;
   flex: 1;
+}
+
+button, input {
+	overflow: hidden;
+}
+
+p {
+  display: inline-block;
+  margin: 0.5em;
 }
 
 .enlace-cuenta {

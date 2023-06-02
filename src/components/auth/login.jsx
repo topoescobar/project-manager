@@ -34,26 +34,27 @@ const Login = () => {
                      type="email"
                      id="email"
                      name="email"
-                     placeholder="Tu Email"
+                     placeholder="nombre@mail.com"
                      value={user.email}
                      onChange={changeFn}
                   />
                </div>
 
                <div className="form_field">
-                  <label htmlFor="password">Password</label>
+                  <label htmlFor="pass">Password</label>
                   <input
                      type="password"
-                     id="password"
+                     id="pass"
                      name="password"
-                     placeholder="Tu Password"
+                     placeholder="******"
                      value={user.password}
                      onChange={changeFn}
                   />
                </div>
 
                <div className="form_field">
-                  <input type="submit" className="btn btn_primary btn-block" value="Iniciar Sesión" />
+                  <input type="submit" className="btn btn_primary btn-block" 
+                  value="Iniciar Sesión" />
                </div>
             </form>
 

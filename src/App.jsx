@@ -26,7 +26,7 @@ function App() {
         </ul>
       </nav>
       <div>
-        {/* outlet permite renderizar los componentes hijos dejinidos en main */}
+        {/* outlet permite renderizar los componentes hijos definidos en main */}
         <Outlet></Outlet>
       </div>
 
