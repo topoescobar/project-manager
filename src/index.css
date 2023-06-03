@@ -95,7 +95,7 @@ a {
 
 
 @media (min-width: 768px) {
-  .contenedor-app {
+  .app_container {
       display: flex;
       min-height: 100vh;
   }
@@ -104,7 +104,7 @@ a {
       background-color: var(--blanco);
       flex: 0 0 300px;
   }
-  .seccion-principal {
+  .main_section {
       flex: 1;
   }
 
@@ -116,18 +116,18 @@ aside  {
   padding: 3rem;
 }
 
-.formulario-nuevo-proyecto {
+.new_project_form {
   margin-top: 6rem;
 }
-.formulario-nuevo-proyecto .input-text {
+.new_project_form .input-text {
   border-bottom: 1px solid var(--gris2);
   border-radius: 0;
   background-color: var(--gris1);
 }
-.formulario-nuevo-proyecto .input-text::placeholder{
+.new_project_form .input-text::placeholder{
   color: var(--gris2);
 }
-.proyectos {
+.projects_sidebar {
   margin-top: 10rem;
 }
 .listado-proyectos li {
@@ -186,7 +186,7 @@ aside  {
 }
 
 /** TAREAS LISTADO **/
-.contenedor-tareas {
+.task_container {
   padding: 4rem;
 }
 

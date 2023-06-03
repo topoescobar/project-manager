@@ -9,7 +9,7 @@ const Login = () => {
    })
 
 
-   const changeFn = (e) => {
+   const fnChange = (e) => {
       //esta fn toma copia de lo que ya se inreso en user (email o passw), y le agrega el otro campo dinamicamente usando los atributos name y value
       saveUser({
          ...user,
@@ -36,7 +36,7 @@ const Login = () => {
                      name="email"
                      placeholder="nombre@mail.com"
                      value={user.email}
-                     onChange={changeFn}
+                     onChange={fnChange}
                   />
                </div>
 
@@ -48,7 +48,7 @@ const Login = () => {
                      name="password"
                      placeholder="******"
                      value={user.password}
-                     onChange={changeFn}
+                     onChange={fnChange}
                   />
                </div>
 
