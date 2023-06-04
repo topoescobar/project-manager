@@ -1,18 +1,18 @@
 import React from 'react'
 
-const Task = ({task}) => { //recibo la tarea como props de tasklis
+const Task = ({task}) => { //recibo la tarea como props de tasklist
   return (
     <li className="tarea sombra">
-    <p>{tarea.nombre} </p>
+    <p>{task.name} </p>
 
     <div className="estado">
-        {tarea.estado 
+        {task.status 
         ?  
             (
                 <button
                     type="button"
                     className="completo"
-                    onClick={() => cambiarEstado(tarea)}
+                    // onClick={() => cambiarEstado(tarea)}
                 >Completo</button>
             )
         : 
@@ -20,7 +20,7 @@ const Task = ({task}) => { //recibo la tarea como props de tasklis
                 <button
                     type="button"
                     className="incompleto"
-                    onClick={() => cambiarEstado(tarea)}
+                    // onClick={() => cambiarEstado(tarea)}
                 >Incompleto</button>
             )
         }
@@ -30,13 +30,13 @@ const Task = ({task}) => { //recibo la tarea como props de tasklis
         <button 
             type="button"
             className="btn btn-primario"
-            onClick={() => seleccionarTarea(tarea) }
+            // onClick={() => seleccionarTarea(tarea) }
         >Editar</button>
 
         <button
             type="button"
             className="btn btn-secundario"
-            onClick={() => tareaEliminar(tarea._id)}
+            // onClick={() => tareaEliminar(tarea._id)}
         >Eliminar</button>
     </div>
 </li>  )

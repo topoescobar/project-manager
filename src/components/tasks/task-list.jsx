@@ -3,10 +3,10 @@ import Task from './task'
 
 const TaskList = () => {
   const projectTasks = [
-    { name: 'oram', state: true },
-    { name: 'lab', state: true },
-    { name: 'portfolio', state: false },
-    { name: 'regularidad materias', state: false }
+    { name: 'oram', status: true },
+    { name: 'lab', status: true },
+    { name: 'portfolio', status: false },
+    { name: 'regularidad materias', status: false }
   ]
   return (
     <>
@@ -18,6 +18,12 @@ const TaskList = () => {
             (<Task task={tsk} />))
         }
       </ul>
+
+      <button
+      type='button'
+      className='btn btn-eliminar'>
+        Eliminar Proyecto &times;
+      </button>
     </>
   )
 }

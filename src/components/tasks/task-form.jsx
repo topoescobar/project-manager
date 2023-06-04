@@ -16,7 +16,7 @@ const TaskForm = () => {
         <div className="contenedor-input">
           <input
             type='submit'
-            className='btn btn_primary btn-submit btn-block'
+            className='btn btn-primario btn-submit btn-block'
             value='Agregar proyecto'
             />
         </div>

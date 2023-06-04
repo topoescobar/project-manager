@@ -65,11 +65,11 @@ a {
 .btn:hover {
   cursor: pointer;
 }
-.btn_primary {
+.btn-primario {
   background-color: var(--gris2);
   color: var(--blanco);
 }
-.btn_primary:hover {
+.btn-primario:hover {
   background: var(--gris3);
 }
 .btn-secundario {

@@ -4,31 +4,34 @@ import Login from './components/auth/login'
 import NewAccount from './components/auth/new-account'
 import Projects from './components/projects/projects'
 import { Outlet, Link } from 'react-router-dom'
+import ProjectState from '../context/proyects/projectState'
 // import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <nav>
-        <Link to={`/`} >
-          <h1> MERN-tasks navbar</h1>
-        </Link>
-        <ul>
-          <li>
-            <Link to={`/login`}>Login</Link>
-          </li>
-          <li>
-            <Link to={`/projects`}>Projects</Link>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        {/* outlet permite renderizar los componentes hijos definidos en main */}
-        <Outlet></Outlet>
-      </div>
+      <ProjectState>
+        <nav>
+          <Link to={`/`} >
+            <h1> MERN-tasks navbar</h1>
+          </Link>
+          <ul>
+            <li>
+              <Link to={`/login`}>Login</Link>
+            </li>
+            <li>
+              <Link to={`/projects`}>Projects</Link>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          {/* outlet permite renderizar los componentes hijos definidos en main */}
+          <Outlet></Outlet>
+        </div>
+      </ProjectState>
+
 
       {/*       <div>
         <a href="https://vitejs.dev" target="_blank">

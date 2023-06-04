@@ -53,7 +53,7 @@ const Login = () => {
                </div>
 
                <div className="form_field">
-                  <input type="submit" className="btn btn_primary btn-block" 
+                  <input type="submit" className="btn btn-primario btn-block" 
                   value="Iniciar Sesión" />
                </div>
             </form>

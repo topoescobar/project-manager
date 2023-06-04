@@ -21,7 +21,7 @@ const NewProject = () => {
   return (
     <>
       <button type="button"
-        className="btn btn-block btn_primary"
+        className="btn btn-block btn-primario"
       // onClick={onClickFormulario}
       > Nuevo Proyecto </button>
 
@@ -39,7 +39,7 @@ const NewProject = () => {
 
         <input
           type="submit"
-          className="btn btn_primary btn-block"
+          className="btn btn-primario btn-block"
           value="Agregar Proyecto"
         />
 
