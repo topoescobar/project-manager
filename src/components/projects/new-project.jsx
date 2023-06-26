@@ -5,7 +5,7 @@ const NewProject = () => {
 
   //obteniendo state del form, se puede consumir a traves de todo el nodo sin pasarlo por props 
   const projectContext = useContext(ProjectContext)
-
+ 
   const [project, setProject] = useState({
     projName: '',
 
