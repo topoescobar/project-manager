@@ -4,7 +4,7 @@ import Login from './components/auth/login'
 import NewAccount from './components/auth/new-account'
 import Projects from './components/projects/projects'
 import { Outlet, Link } from 'react-router-dom'
-import ProjectState from '../context/proyects/projectState'
+import ProjectState from '../context/projects/projectState'
 // import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 
