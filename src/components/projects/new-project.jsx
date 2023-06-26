@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import ProjectContext from '../../../context/projects/projectContext'
 
 const NewProject = () => {
+
+  //obteniendo state del form, se puede consumir a traves de todo el nodo sin pasarlo por props 
+  const projectContext = useContext(ProjectContext)
 
   const [project, setProject] = useState({
     projName: '',
@@ -10,7 +14,7 @@ const NewProject = () => {
   const fnChangeProject = (e) => {
     setProject({
       ...project,
-      [e.target.name] : e.target.value
+      [e.target.name]: e.target.value
     })
   }
 
@@ -25,25 +29,30 @@ const NewProject = () => {
       // onClick={onClickFormulario}
       > Nuevo Proyecto </button>
 
-      <form
-        className="new_project_form"
-       onSubmit={fnSubmitProject}
-      >
-        <input type="text"
-          className="input-text"
-          placeholder="Nombre Proyecto"
-          name="projName"
-          // value={project.name} //no entiendo el uso
-          onChange={fnChangeProject}
-        />
+      {
+        projectContext.form ?
+          (<><h3>ProjectState Verdadero </h3>
+            <form
+              className="new_project_form"
+              onSubmit={fnSubmitProject}
+            >
+              <input type="text"
+                className="input-text"
+                placeholder="Nombre Proyecto"
+                name="projName"
+                // value={project.name} //no entiendo el uso
+                onChange={fnChangeProject} />
 
-        <input
-          type="submit"
-          className="btn btn-primario btn-block"
-          value="Agregar Proyecto"
-        />
+              <input
+                type="submit"
+                className="btn btn-primario btn-block"
+                value="Agregar Proyecto" />
 
-      </form>
+            </form></>
+          ) :
+          (<h3>ProjectState False</h3>)
+      }
+
     </>
   )
 }
